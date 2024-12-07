@@ -1,3 +1,4 @@
 # Ignorar archivos 
 .env
 venv/
+setup_preparation.tx
