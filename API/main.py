@@ -52,6 +52,7 @@ async def actualizar_tarea(tarea_id: int, actualizare_tarea: Tarea):
         raise HTTPException(status_code=404, detail="Tarea no encontrada")
 
     # Actualiza los campos de la tarea
+    # Decidi solo editar estos atributos y que no se pueda editar el ID para evitar futuros conflictos
     tarea.title = actualizare_tarea.title
     tarea.description = actualizare_tarea.description
     tarea.completed = actualizare_tarea.completed
