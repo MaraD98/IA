@@ -1,4 +1,5 @@
 # Ignorar archivos 
 .env
-venv/
-setup_preparation.tx
+\venv
+\__pycache__
+\.ipynb_checkpoints
