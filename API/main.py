@@ -25,6 +25,10 @@ class Tarea(BaseModel):
 #Mi db xD
 tareas=[]
 
+
+
+
+
 #Trae la lista completa de tareas
 @app.get("/tareas", response_model=List[Tarea])
 async def mostrar_todos():

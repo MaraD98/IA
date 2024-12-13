@@ -1,0 +1,6 @@
+fastapi
+chromadb
+pydantic
+Uvicorn
+cohere
+langchain
