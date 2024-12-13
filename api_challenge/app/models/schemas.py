@@ -25,7 +25,7 @@ class OutUp(BaseModel):
 
 class OutEmbeddings(BaseModel):
     message: str 
-    document_id: int = Field(..., pattern="^[a-zA-Z0-9_-]+$", description="ID único del embedding (alfanumérico)")
+    document_id: str = Field(..., pattern="^[a-zA-Z0-9_-]+$", description="ID único del embedding (alfanumérico)")
 
 class DocumentResult(BaseModel):
     document_id: str = Field(..., pattern="^[a-zA-Z0-9_-]+$", description="ID único del documento relevante (alfanumérico)")
